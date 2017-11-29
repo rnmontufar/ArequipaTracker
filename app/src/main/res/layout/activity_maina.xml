@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+       <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp" android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="355px"
+        android:lineSpacingExtra="24sp"
+        android:text="ArequipaTracker"
+        android:textSize="20sp" />
+
+    <TextView
+           android:id="@+id/textView2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Examen2 PE"
+           android:layout_marginLeft="415px"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+
+
+    <Switch
+            android:id="@+id/Ser_Track"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="inTrackClick"
+            android:text="Servicio Tracking"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:layout_margin="20dp"/>
+
+    <Switch
+        android:id="@+id/Env_Auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="inEnvioAutomaticoClick"
+        android:text="Envío Automático"
+        android:layout_margin="20dp"/>
+
+    <Switch
+             android:id="@+id/Location"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:onClick="inLocalizacionClick"
+             android:text="Localización"
+            android:layout_margin="20dp"/>
+
+       <android.support.design.widget.CoordinatorLayout
+             android:id="@+id/mensaje"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+           <Button
+               android:id="@+id/Env_info"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:onClick="inEnvInfoClick"
+               android:text="Enviar Información" />
+       </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
